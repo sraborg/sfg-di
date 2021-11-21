@@ -14,7 +14,7 @@ import org.springframework.context.annotation.*;
 public class GreetingServiceConfig {
 
     @Bean
-    FakeDataSource fakeDataSource(SfgConfiguration sfgConfiguration {
+    FakeDataSource fakeDataSource(SfgConfiguration sfgConfiguration) {
 
         FakeDataSource fakeDataSource = new FakeDataSource();
         fakeDataSource.setUsername(sfgConfiguration.getUsername());
